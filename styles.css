@@ -14,10 +14,17 @@ html {
   color: inherit;
   background-color: inherit;
 }
+body > img {
+  /* position: fixed; */
+  width: 100%;
+  z-index: -1;
+}
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(118, 174, 247);
+  background-color: #1f2937;
   padding: 20px;
   color: white;
 }
@@ -26,4 +33,93 @@ header nav {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 18px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  padding: 20px;
+  color: white;
+}
+
+.info {
+  background-color: #1f2937;
+  padding: 20px;
+  border-radius: 20px;
+}
+.info > h1,
+.info > p {
+  background-color: transparent;
+}
+.info > h1,
+.info > p {
+  margin-bottom: 10px;
+}
+.intro img {
+  width: 50vw;
+}
+#members {
+  padding: 20px;
+  background-color: #fff;
+}
+#members > h2 {
+  text-align: center;
+}
+.member-pics {
+  padding: 20px;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member-pics > div > img {
+  width: 200px;
+  border: 5px solid #3882f6;
+}
+#videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #e5e7eb;
+}
+#videos > iframe {
+  height: auto;
+  width: 1000px;
+  max-width: 90%;
+  aspect-ratio: 16/9;
+}
+#join {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+}
+button {
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.button-container {
+  background-color: #3882f6;
+  border-radius: 10px;
+  padding: 50px 30px;
+  width: 90vw;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#copyright {
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
